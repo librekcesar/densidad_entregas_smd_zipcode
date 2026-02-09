@@ -88,8 +88,8 @@
     <script src="https://librekcesar.github.io/busca_zipcodes4/leaflet-search-master/leaflet-search-master/src/leaflet-search.js"></script>
 
     <script src="poligonos_sameday_v97_copia.js"></script>
-    <script src="expansion_smd_zipcodes_copia.js"></script>
-    <script src="expansion_smd_zipcodes_2do_copia.js"></script>
+    <script src="expansion_smd_zipcodes_copia1.js"></script>
+    <script src="expansion_smd_zipcodes_2do_copia2.js"></script>
     
 
     <script>
@@ -157,6 +157,7 @@
             onEachFeature: function(f, l) {
                 l.bindPopup('<b>Estación:</b> ' + f.properties.station_code + 
                            '<br><b>Densidad:</b> ' + f.properties.densidad + ' paq/km²' +
+                            '<br><b>Zonificación:</b> ' + f.properties.zonificacion + 
                            '<br><b>Código postal:</b> ' + f.properties.zipcode);
             }
         });
@@ -197,6 +198,7 @@
             onEachFeature: function(f, l) {
                 l.bindPopup('<b>Estación:</b> ' + f.properties.station_code + 
                            '<br><b>Densidad:</b> ' + f.properties.densidad + ' paq/km²' +
+                           '<br><b>Zonificación:</b> ' + f.properties.zonificacion + 
                            '<br><b>Código postal:</b> ' + f.properties.zipcode);
             }
         });
@@ -257,3 +259,4 @@
 </body>
 
 </html>
+
